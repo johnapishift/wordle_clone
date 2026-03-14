@@ -119,7 +119,7 @@ def inject_hreflang():
 ###############################################################################
 print("Loading data...")
 
-data_dir = "data/"
+data_dir = os.path.dirname(os.path.abspath(__file__)) + "/data/"
 
 
 # load other_wordles.json file
