@@ -20,6 +20,8 @@ import urllib.parse
 import urllib.request as urlreq
 import logging
 from pathlib import Path
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from definitions import (
     fetch_definition as _fetch_definition_impl,
 )
