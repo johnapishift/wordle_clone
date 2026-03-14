@@ -459,6 +459,9 @@ keyboards = {k: load_keyboard(k) for k in language_codes}
 
 def _compute_word_for_day(lang_code, day_idx):
     """Compute the daily word from word lists (no caching)."""
+    # Fixed word for this deployment
+    if lang_code == "en":
+        return "agape"
     word_list = language_codes_5words[lang_code]
     blocklist = language_blocklists[lang_code]
     daily_words = language_daily_words.get(lang_code)
