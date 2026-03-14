@@ -1,15 +1,5 @@
 {
-    "buildCommand": "pnpm build",
-    "builds": [
-        {
-            "src": "webapp/app.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "webapp/app.py"
-        }
-    ]
+  "buildCommand": "cd app && npm install && npm run build",
+  "outputDirectory": "app/dist",
+  "framework": null
 }
